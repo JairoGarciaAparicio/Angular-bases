@@ -1,0 +1,13 @@
+<h1>DGZ Personajes</h1>
+<hr>
+<div class="row">
+
+    <!-- onDelete escuchar evento de onDelete y conentar cin mainPage-->
+    <div class="col">
+        <!-- <dgz-list [characterList]="dgzService.characters" (onDelete)="dgzService.onDeleteCharacter($event)"></dgz-list> -->
+        <dgz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dgz-list>
+    </div>
+    <div class="col">
+        <dgz-add-character (onNewCharacter)="onNewCharacter($event)"></dgz-add-character>
+    </div>
+</div>
